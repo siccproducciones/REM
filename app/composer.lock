@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9d5c6b2d51567cd9e1f50a6b8702906",
+    "content-hash": "44109663e143799c33e530cb7b451430",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2984,6 +2984,76 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "yajra/laravel-datatables-oracle",
+            "version": "v8.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables.git",
+                "reference": "8c3490d7a810824da147161033d6ef272d7c8726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/8c3490d7a810824da147161033d6ef272d7c8726",
+                "reference": "8c3490d7a810824da147161033d6ef272d7c8726",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.4.*|5.5.*",
+                "illuminate/filesystem": "5.4.*|5.5.*",
+                "illuminate/http": "5.4.*|5.5.*",
+                "illuminate/support": "5.4.*|5.5.*",
+                "illuminate/view": "5.4.*|5.5.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.5"
+            },
+            "suggest": {
+                "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTable.",
+                "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
+                "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTable."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\DataTablesServiceProvider"
+                    ],
+                    "aliases": {
+                        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                },
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "jQuery DataTables API for Laravel 4|5",
+            "keywords": [
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2017-11-02T02:30:46+00:00"
+        },
+        {
             "name": "zircote/swagger-php",
             "version": "2.0.12",
             "source": {
@@ -4727,11 +4797,11 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "infyomlabs/laravel-generator": 20,
         "infyomlabs/adminlte-templates": 20,
+        "infyomlabs/generator-builder": 20,
+        "infyomlabs/laravel-generator": 20,
         "infyomlabs/swagger-generator": 20,
-        "jlapp/swaggervel": 20,
-        "infyomlabs/generator-builder": 20
+        "jlapp/swaggervel": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
